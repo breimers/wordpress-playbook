@@ -1,9 +1,13 @@
 - hosts: all
- gather_facts: False
+  gather_facts: False
 
- tasks:
- - name: install python 2
-   raw: test -e /usr/bin/python || (apt -y update && apt install -y python-minimal)
+  tasks:
+  - name: install python 2
+    raw: test -e /usr/bin/python || (apt -y update && apt install -y python-minimal)
+  
+  - name: add repository for letsencrypt
+    apt_repository: repo='ppa:certbot/certbot'
+    
 - hosts: wordpress
 
   roles:
