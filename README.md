@@ -45,3 +45,5 @@ Ansible Playbook for launching a simple WP server with SSL
     Another idea is to set the sitename from the beginning if you can automate the dns
     
     Definitely need to delve more into ansible! Can be powerful if combined with a provisioning system a-la-Terraform
+    
+Some components remind me of Rails and also of Terraform. Ansible seems to bridge a gap between automated provisioning, and web development. Ansible helps to configure an existing server, and you could, of course, set it up for Rails, WP, or whatever you want. I feel like this will be a growing and essential item to have in the virtual toolbelt.
